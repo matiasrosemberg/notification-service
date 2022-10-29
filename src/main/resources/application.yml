@@ -1,0 +1,14 @@
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+message-rates:
+  max-per-type:
+    ads: 1
+    info: 2
+    notification: 3
+  window-per-type:
+    ads: 3000
+    info: 20000
+    notification: 10000

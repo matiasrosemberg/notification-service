@@ -1,10 +1,13 @@
 package com.example.notificationservice.model;
 
-import java.util.HashMap;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Counter {
-
-    private String userId;
-    private HashMap<String, Integer> counter;
-
+    private int count;
+    private long createdAt;
 }
